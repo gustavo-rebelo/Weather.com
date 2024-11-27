@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div id="navigation">
+            <ul>
+                <h2 id="title"><Strong>WEATHER.com</Strong></h2>
+                <li><a href="#home"><strong>Início</strong></a></li>
+                <li><a href="../about/index.html">Sobre</a></li>
+                <li><a href="../contact/index.html">Contato</a></li>
+            </ul>
+        </div>
+        <div id="user">
+            <div id="enter">
+                <a href="#entrar">Entrar</a>
+            </div>
+            <h3>ou</h3>
+            <div id="cad">
+                <a href="#cadastre-se">Cadastre-se</a>
+            </div>
+        </div>
+    </header>
+    <div>
+        <h2 class="title-form">WEATHER.com</h2>
+        <div id="form">
+            <input type="text" id="city-input" placeholder="Busque a sua cidade">
+            <button id="search">Buscar</button>
+        </div>
+    </div>
+    <div id="weather-container" class="hide">
+        <div id="weather-data">
+            <div id="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <span id="city"></span>
+            </div>
+        </div>
+        <div id="description-container">
+            <p id="temperature"><span></span>&deg;C</p>
+            <p id="description"></p>
+            <img src="http://openweathermap.org/img/wn/01d.png" alt="" id="hours">
+        </div>
+        <div id="description-especific">
+            <p id="humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <span></span>
+            </p>
+            <p id="wind">
+                <i class="fa-solid fa-wind"></i>
+                <span></span>
+            </p>
+        </div>
+    </div>
+    <footer>
+        Desenvolvido por Gustavo Rebelo
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

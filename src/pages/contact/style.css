@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    background: #8C52FF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Estilos gerais para o header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 20px 10px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+#title {
+    margin-right: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.title-form{
+    font-size: 48px;
+}
+
+/* Estilizando o menu de navegação */
+#navigation ul {
+    list-style: none;
+    /* Remove os marcadores padrão */
+    padding: 0;
+    margin: 0;
+    margin-left: 50px;
+    display: flex;
+    /* Exibe os itens de lista lado a lado */
+}
+
+#navigation li {
+    margin: 0 5px;
+    /* Espaço entre os itens */
+}
+
+#navigation a {
+    color: white;
+    /* Cor do texto */
+    text-decoration: none;
+    /* Remove o sublinhado */
+    font-size: 18px;
+    padding: 10px 10px;
+    display: block;
+    /* Torna os links "clicáveis" toda a área do item */
+    transition: background-color 0.3s ease;
+    /* Animação suave ao passar o mouse */
+}
+
+#navigation a:hover {
+    background-color: #8b48d7;
+    /* Cor de fundo ao passar o mouse */
+    border-radius: 5px;
+    /* Bordas arredondadas */
+}
+
+footer {
+    position: fixed;
+    bottom: 0; /* Posiciona no fim da página */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3); /* Fundo semitransparente */
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Alinhamento vertical */
+    text-align: center;
+    height: auto;
+}
+
+#container-main {
+    flex: 1;
+    overflow-y: auto; /* Habilita rolagem vertical */
+    overflow-x: hidden; /* Evita rolagem horizontal indesejada */
+    margin: 0 20px; /* Espaço para não invadir o header e footer */
+    padding: 50px 30px;
+    background-color: #fff; /* Certifique-se de definir uma cor de fundo */
+    border-radius: 8px; /* Opcional: Adiciona bordas arredondadas */
+    max-height: calc(100vh - 300px); /* Altura máxima baseada na tela menos header/footer */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Estilo opcional */
+    color: #7311e4;
+    max-width: calc(100vw - 450px);
+    font-size: 18px;
+}
+
+h2 {
+    color: #fff;
+    margin: 5px 0;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 28px;
+}
+#main-contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: calc(100vw - 50px);
+}
+
+#description-contact {
+    max-width: 400px;
+}
+#user {
+    display: flex;
+    align-items: center; /* Centraliza os itens verticalmente */
+    gap: 10px; /* Espaçamento entre os elementos */
+    color: white;
+    font-family: 'Ubuntu', sans-serif; /* Fonte padrão do site */
+}
+
+#user h3 {
+    margin: 0;
+    font-size: 1rem; /* Ajusta o tamanho da fonte para "OU" */
+    color: #ffffffcc; /* Texto ligeiramente mais opaco */
+}
+
+#user div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #ffffff; /* Mantém o texto branco */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo translúcido */
+    padding: 8px 16px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#user a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Muda o fundo ao passar o mouse */
+}
